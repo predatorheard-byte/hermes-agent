@@ -1,0 +1,250 @@
+# desktop.log evidence excerpts — issue #105184
+# Two in-app-update incidents producing corrupted renderer bundles.
+# Only operational lines retained (boot lifecycle + renderer errors); no personal data.
+# Incident 1: 2026-09-02, HEAD afc3d9d34c, bundle index-C4jgdn_N.js:22
+# Incident 2: 2026-09-07, HEAD d9833c5615, bundle index-Ci1GuYVJ.js:440
+
+[2026-08-25T08:04:45.275Z] [hermes] HERMES_BACKEND_READY port=34487
+[2026-08-25T08:04:45.603Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-25T08:13:14.955Z] [hermes] HERMES_BACKEND_READY port=42445
+[2026-08-25T08:13:15.216Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-25T08:35:50.389Z] [hermes] [renderer:main] render-process-gone reason=crashed exitCode=139
+[2026-08-25T10:46:22.431Z] [hermes] HERMES_BACKEND_READY port=34879
+[2026-08-25T10:46:22.767Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-25T11:55:39.536Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-08-25T12:05:15.379Z] [hermes] HERMES_BACKEND_READY port=40569
+[2026-08-25T12:05:16.199Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-25T15:34:55.683Z] [hermes] HERMES_BACKEND_READY port=40167
+[2026-08-25T15:34:55.877Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-25T19:59:37.062Z] [hermes] HERMES_BACKEND_READY port=39067
+[2026-08-25T19:59:37.461Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-25T20:05:31.619Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-08-25T20:08:12.014Z] [hermes] HERMES_BACKEND_READY port=43249
+[2026-08-25T20:08:12.417Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-25T20:51:49.860Z] [hermes] HERMES_BACKEND_READY port=44917
+[2026-08-25T20:51:50.024Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-25T21:21:40.183Z] [hermes] HERMES_BACKEND_READY port=39685
+[2026-08-25T21:21:40.393Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-25T21:56:20.374Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-08-25T22:19:09.511Z] [hermes] HERMES_BACKEND_READY port=39135
+[2026-08-25T22:19:10.629Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-26T05:25:39.628Z] [hermes] HERMES_BACKEND_READY port=41761
+[2026-08-26T05:25:39.988Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-26T11:00:28.563Z] [hermes] HERMES_BACKEND_READY port=44667
+[2026-08-26T11:00:28.825Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-26T11:21:50.434Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-08-26T11:27:22.423Z] [hermes] HERMES_BACKEND_READY port=41613
+[2026-08-26T11:27:23.224Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-26T16:20:23.979Z] [hermes] HERMES_BACKEND_READY port=38897
+[2026-08-26T16:20:24.404Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-26T16:20:45.029Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-08-26T16:40:56.632Z] [hermes] HERMES_BACKEND_READY port=43081
+[2026-08-26T16:40:57.410Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-27T07:24:19.195Z] [hermes] HERMES_BACKEND_READY port=46387
+[2026-08-27T07:24:19.682Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-27T08:59:03.611Z] [hermes] [renderer:main] render-process-gone reason=crashed exitCode=139
+[2026-08-27T09:44:59.060Z] [hermes] [renderer:main] render-process-gone reason=crashed exitCode=133
+[2026-08-27T10:25:00.051Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-08-27T10:31:18.737Z] [hermes] HERMES_BACKEND_READY port=46633
+[2026-08-27T10:32:20.548Z] [hermes] HERMES_BACKEND_READY port=41129
+[2026-08-27T10:59:53.706Z] [hermes] HERMES_BACKEND_READY port=39905
+[2026-08-27T11:01:20.130Z] [hermes] [renderer console:main] Uncaught (in promise) Error: Error invoking remote method 'hermes:api': Error: Timed out waiting for Hermes backend port announcement (90000ms) (file:///home/djohonson/.hermes/hermes-agent/apps/desktop/release/linux-unpacked/resources/app.asar.unpacked/dist/assets/index-zHJzoNzZ.js:345)
+[2026-08-27T11:03:26.304Z] [hermes] HERMES_BACKEND_READY port=44925
+[2026-08-27T11:04:53.348Z] [hermes] [renderer console:main] Uncaught (in promise) Error: Error invoking remote method 'hermes:api': Error: Timed out waiting for Hermes backend port announcement (90000ms) (file:///home/djohonson/.hermes/hermes-agent/apps/desktop/release/linux-unpacked/resources/app.asar.unpacked/dist/assets/index-zHJzoNzZ.js:345)
+[2026-08-27T11:06:03.915Z] [hermes] HERMES_BACKEND_READY port=32837
+[2026-08-27T11:18:48.920Z] [hermes] HERMES_BACKEND_READY port=42261
+[2026-08-27T11:18:49.080Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-27T12:08:59.639Z] [hermes] [renderer:main] render-process-gone reason=crashed exitCode=133
+[2026-08-27T15:38:53.980Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-08-27T15:53:25.257Z] [hermes] HERMES_BACKEND_READY port=34659
+[2026-08-27T15:53:25.496Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-28T07:44:50.784Z] [hermes] HERMES_BACKEND_READY port=32811
+[2026-08-28T07:44:50.893Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-28T12:37:23.440Z] [hermes] HERMES_BACKEND_READY port=46711
+[2026-08-28T12:37:23.603Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-28T14:12:15.247Z] [hermes] HERMES_BACKEND_READY port=38919
+[2026-08-28T14:12:15.529Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-28T20:02:53.043Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-08-29T08:12:22.279Z] [hermes] HERMES_BACKEND_READY port=35513
+[2026-08-29T08:12:22.746Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-29T09:24:54.234Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-08-29T09:28:41.511Z] [hermes] HERMES_BACKEND_READY port=32861
+[2026-08-29T09:28:41.645Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-29T10:59:00.890Z] [hermes] HERMES_BACKEND_READY port=36357
+[2026-08-29T10:59:01.021Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-29T12:04:19.533Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-08-29T12:07:23.671Z] [hermes] HERMES_BACKEND_READY port=40925
+[2026-08-29T12:07:23.888Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-29T13:47:21.560Z] [hermes] [renderer:main] render-process-gone reason=crashed exitCode=133
+[2026-08-29T15:10:21.841Z] [hermes] HERMES_BACKEND_READY port=43653
+[2026-08-29T15:10:21.966Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-29T15:46:10.228Z] [hermes] HERMES_BACKEND_READY port=43037
+[2026-08-29T15:46:10.348Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-29T17:24:37.774Z] [hermes] HERMES_BACKEND_READY port=38663
+[2026-08-29T17:24:37.879Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-29T18:27:02.015Z] [hermes] [renderer:main] render-process-gone reason=crashed exitCode=139
+[2026-08-29T20:06:58.779Z] [hermes] [renderer console:main] Uncaught (in promise) Error: Error invoking remote method 'hermes:api': Error: connect ECONNREFUSED 127.0.0.1:38663 (file:///home/djohonson/.hermes/hermes-agent/apps/desktop/release/linux-unpacked/resources/app.asar.unpacked/dist/assets/index-ngVBKcR6.js:345)
+[2026-08-29T20:07:02.968Z] [hermes] HERMES_BACKEND_READY port=38721
+[2026-08-29T20:07:03.087Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-30T09:38:33.811Z] [hermes] HERMES_BACKEND_READY port=38175
+[2026-08-30T09:38:33.894Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-30T18:43:47.560Z] [hermes] HERMES_BACKEND_READY port=43815
+[2026-08-30T18:43:47.742Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-30T18:47:57.580Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-08-30T18:54:06.981Z] [hermes] HERMES_BACKEND_READY port=39629
+[2026-08-30T18:54:07.236Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-30T19:05:33.968Z] [hermes] HERMES_BACKEND_READY port=39739
+[2026-08-30T19:05:34.112Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-30T19:21:53.794Z] [hermes] HERMES_BACKEND_READY port=40993
+[2026-08-30T19:21:53.878Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-31T09:32:25.952Z] [hermes] HERMES_BACKEND_READY port=45417
+[2026-08-31T09:32:26.199Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-31T10:28:42.943Z] [hermes] HERMES_BACKEND_READY port=41565
+[2026-08-31T10:28:43.090Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-31T11:10:37.751Z] [hermes] HERMES_BACKEND_READY port=39731
+[2026-08-31T11:10:37.828Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-31T12:11:33.503Z] [hermes] [renderer console:main] Uncaught Error: MessageRepository(updateMessage): Message not found. This is likely an internal bug in assistant-ui. (file:///home/djohonson/.hermes/hermes-agent/apps/desktop/release/linux-unpacked/resources/app.asar.unpacked/dist/assets/index-CkH99u3C.js:76)
+[2026-08-31T13:30:07.990Z] [hermes] HERMES_BACKEND_READY port=33701
+[2026-08-31T13:30:08.128Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-31T15:51:46.170Z] [hermes] HERMES_BACKEND_READY port=43633
+[2026-08-31T15:51:46.285Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-31T17:46:16.369Z] [hermes] HERMES_BACKEND_READY port=41169
+[2026-08-31T17:46:16.475Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-08-31T17:46:33.056Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-08-31T18:39:07.684Z] [hermes] HERMES_BACKEND_READY port=41531
+[2026-08-31T18:39:08.260Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-01T08:16:01.657Z] [hermes] HERMES_BACKEND_READY port=42311
+[2026-09-01T08:16:01.746Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-01T09:08:12.641Z] [hermes] HERMES_BACKEND_READY port=35899
+[2026-09-01T09:08:12.763Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-01T09:15:22.667Z] [hermes] HERMES_BACKEND_READY port=43969
+[2026-09-01T09:15:22.763Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-01T12:13:22.648Z] [hermes] HERMES_BACKEND_READY port=45943
+[2026-09-01T12:13:22.753Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-02T05:54:21.080Z] [hermes] HERMES_BACKEND_READY port=34281
+[2026-09-02T05:54:21.199Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-02T05:56:45.603Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-09-02T06:03:12.451Z] [hermes] HERMES_BACKEND_READY port=45829
+[2026-09-02T06:03:12.577Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-02T11:13:58.285Z] [hermes] HERMES_BACKEND_READY port=45719
+[2026-09-02T11:13:58.521Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-02T12:41:15.205Z] [hermes] HERMES_BACKEND_READY port=36071
+[2026-09-02T12:41:15.432Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-02T12:58:16.937Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-09-02T13:02:35.594Z] [hermes] [updates] detached update finished OK (branch main)
+[2026-09-02T13:02:40.543Z] [hermes] HERMES_BACKEND_READY port=42297
+[2026-09-02T13:02:40.633Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-02T15:26:40.470Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-09-02T15:30:24.690Z] [hermes] [updates] detached update finished OK (branch main)
+[2026-09-02T15:30:25.673Z] [hermes] [renderer console:main] Uncaught SyntaxError: Unexpected token ':' (file:///home/djohonson/.hermes/hermes-agent/apps/desktop/release/linux-unpacked/resources/app.asar.unpacked/dist/assets/index-C4jgdn_N.js:22)
+[2026-09-02T15:30:28.411Z] [hermes] HERMES_BACKEND_READY port=38103
+[2026-09-02T15:30:28.547Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-02T15:31:15.865Z] [hermes] [renderer console:main] Uncaught SyntaxError: Unexpected token ':' (file:///home/djohonson/.hermes/hermes-agent/apps/desktop/release/linux-unpacked/resources/app.asar.unpacked/dist/assets/index-C4jgdn_N.js:22)
+[2026-09-02T15:31:17.512Z] [hermes] HERMES_BACKEND_READY port=35357
+[2026-09-02T15:31:17.665Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-03T06:34:50.978Z] [hermes] HERMES_BACKEND_READY port=40633
+[2026-09-03T06:34:51.074Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-03T10:10:10.036Z] [hermes] [renderer console:main] Uncaught TypeError: Cannot read properties of undefined (reading 'startsWith') (file:///home/djohonson/.hermes/hermes-agent/apps/desktop/release/linux-unpacked/resources/app.asar.unpacked/dist/assets/combo-BpRy4pSI.js:41)
+[2026-09-03T10:10:28.980Z] [hermes] [renderer console:main] Uncaught TypeError: Cannot read properties of undefined (reading 'startsWith') (file:///home/djohonson/.hermes/hermes-agent/apps/desktop/release/linux-unpacked/resources/app.asar.unpacked/dist/assets/combo-BpRy4pSI.js:41)
+[2026-09-03T10:10:37.412Z] [hermes] [renderer console:main] Uncaught TypeError: Cannot read properties of undefined (reading 'startsWith') (file:///home/djohonson/.hermes/hermes-agent/apps/desktop/release/linux-unpacked/resources/app.asar.unpacked/dist/assets/combo-BpRy4pSI.js:41)
+[2026-09-03T10:11:03.495Z] [hermes] [main] Uncaught exception: Error: write EPIPE
+[2026-09-03T16:02:16.522Z] [hermes] [main] Uncaught exception: Error: write EPIPE
+[2026-09-03T16:02:16.555Z] [hermes] [renderer console:main] Uncaught (in promise) Error: Error invoking remote method 'hermes:api': Error: Timed out connecting to Hermes backend after 60000ms (file:///home/djohonson/.hermes/hermes-agent/apps/desktop/release/linux-unpacked/resources/app.asar.unpacked/dist/assets/index-CbuKGy8G.js:365)
+[2026-09-03T16:02:17.625Z] [hermes] [main] Uncaught exception: Error: write EPIPE
+[2026-09-03T16:02:18.966Z] [hermes] [main] Uncaught exception: Error: write EPIPE
+[2026-09-03T16:02:18.967Z] [hermes] [main] Uncaught exception: Error: write EPIPE
+[2026-09-03T16:02:18.977Z] [hermes] [main] Uncaught exception: Error: write EPIPE
+[2026-09-03T16:02:18.978Z] [hermes] [main] Uncaught exception: Error: write EPIPE
+[2026-09-03T16:02:28.600Z] [hermes] [main] Uncaught exception: Error: write EPIPE
+[2026-09-03T16:02:36.341Z] [hermes] [main] Uncaught exception: Error: write EPIPE
+[2026-09-03T16:02:36.342Z] [hermes] [main] Uncaught exception: Error: write EPIPE
+[2026-09-03T16:02:36.346Z] [hermes] [main] Uncaught exception: Error: write EPIPE
+[2026-09-03T16:02:36.347Z] [hermes] [main] Uncaught exception: Error: write EPIPE
+[2026-09-03T16:02:36.348Z] [hermes] [main] Uncaught exception: Error: write EPIPE
+[2026-09-03T16:02:36.349Z] [hermes] [main] Uncaught exception: Error: write EPIPE
+[2026-09-03T16:02:40.618Z] [hermes] HERMES_BACKEND_READY port=41963
+[2026-09-03T16:02:40.814Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-04T05:09:56.462Z] [hermes] HERMES_BACKEND_READY port=35271
+[2026-09-04T05:09:56.604Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-04T07:36:12.410Z] [hermes] HERMES_BACKEND_READY port=46321
+[2026-09-04T07:36:12.571Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-04T07:51:13.677Z] [hermes] HERMES_BACKEND_READY port=35155
+[2026-09-04T07:51:13.854Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-04T10:36:46.252Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-09-04T10:46:11.943Z] [hermes] [updates] detached update finished OK (branch main)
+[2026-09-04T10:46:16.496Z] [hermes] HERMES_BACKEND_READY port=39289
+[2026-09-04T10:46:16.662Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-04T10:48:54.463Z] [hermes] HERMES_BACKEND_READY port=46001
+[2026-09-04T10:48:54.640Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-04T11:06:51.424Z] [hermes] HERMES_BACKEND_READY port=42499
+[2026-09-04T11:06:51.568Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-04T15:30:58.242Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-09-04T15:35:09.441Z] [hermes] [updates] detached update finished OK (branch main)
+[2026-09-04T15:35:14.047Z] [hermes] HERMES_BACKEND_READY port=39295
+[2026-09-04T15:35:14.144Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-04T16:06:52.046Z] [hermes] [renderer console:main] Uncaught (in promise) Error: Error invoking remote method 'hermes:api': Error: Timed out connecting to Hermes backend after 60000ms (file:///home/djohonson/.hermes/hermes-agent/apps/desktop/release/linux-unpacked/resources/app.asar.unpacked/dist/assets/index-BBYwcqUY.js:365)
+[2026-09-04T16:07:26.416Z] [hermes] HERMES_BACKEND_READY port=40611
+[2026-09-04T16:07:26.624Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-04T17:36:27.038Z] [hermes] HERMES_BACKEND_READY port=36521
+[2026-09-04T17:36:27.130Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-04T17:53:16.552Z] [hermes] HERMES_BACKEND_READY port=46183
+[2026-09-04T17:53:16.632Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-04T19:03:39.905Z] [hermes] HERMES_BACKEND_READY port=45667
+[2026-09-04T19:03:39.985Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-05T04:59:35.966Z] [hermes] HERMES_BACKEND_READY port=38063
+[2026-09-05T04:59:36.064Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-05T06:20:59.283Z] [hermes] [renderer:main] render-process-gone reason=crashed exitCode=139
+[2026-09-05T08:15:29.533Z] [hermes] [renderer:main] render-process-gone reason=crashed exitCode=139
+[2026-09-05T11:42:05.926Z] [hermes] HERMES_BACKEND_READY port=45055
+[2026-09-05T11:42:06.029Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-05T12:04:37.430Z] [hermes] HERMES_BACKEND_READY port=36415
+[2026-09-05T12:04:37.556Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-05T13:38:51.345Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-09-05T13:42:45.502Z] [hermes] [updates] detached update finished OK (branch main)
+[2026-09-05T13:42:51.028Z] [hermes] HERMES_BACKEND_READY port=44171
+[2026-09-05T13:42:51.291Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-05T13:47:04.615Z] [hermes] HERMES_BACKEND_READY port=37517
+[2026-09-05T13:47:04.695Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-05T14:44:11.429Z] [hermes] HERMES_BACKEND_READY port=45157
+[2026-09-05T14:44:11.521Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-05T16:24:43.785Z] [hermes] HERMES_BACKEND_READY port=39929
+[2026-09-05T16:24:43.878Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-05T17:30:52.421Z] [hermes] HERMES_BACKEND_READY port=46755
+[2026-09-05T17:30:52.501Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-06T05:58:47.869Z] [hermes] HERMES_BACKEND_READY port=38169
+[2026-09-06T05:58:47.972Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-06T07:27:43.707Z] [hermes] [renderer console:main] Uncaught (in promise) Error: Error invoking remote method 'hermes:api': Error: connect ECONNREFUSED 127.0.0.1:38169 (file:///home/djohonson/.hermes/hermes-agent/apps/desktop/release/linux-unpacked/resources/app.asar.unpacked/dist/assets/index-CHlfU96_.js:365)
+[2026-09-06T07:27:46.891Z] [hermes] HERMES_BACKEND_READY port=43343
+[2026-09-06T07:27:47.007Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-06T15:25:41.814Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-09-06T15:29:24.423Z] [hermes] [updates] detached update finished OK (branch main)
+[2026-09-06T15:29:29.038Z] [hermes] HERMES_BACKEND_READY port=33669
+[2026-09-06T15:29:29.215Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-07T09:40:43.466Z] [hermes] HERMES_BACKEND_READY port=33911
+[2026-09-07T09:40:43.552Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-07T09:41:22.777Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-09-07T09:51:33.862Z] [hermes] [updates] detached update finished OK (branch main)
+[2026-09-07T09:51:37.898Z] [hermes] HERMES_BACKEND_READY port=41591
+[2026-09-07T09:51:38.076Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-07T13:34:41.971Z] [hermes] HERMES_BACKEND_READY port=45859
+[2026-09-07T13:34:42.097Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-07T13:34:57.363Z] [hermes] HERMES_BACKEND_READY port=34741
+[2026-09-07T13:34:57.430Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-07T14:02:31.092Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-09-07T14:06:04.124Z] [hermes] HERMES_BACKEND_READY port=38677
+[2026-09-07T14:06:04.294Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-07T14:06:19.356Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-09-07T14:12:10.785Z] [hermes] [updates] detached update finished OK (branch main)
+[2026-09-07T14:12:15.171Z] [hermes] HERMES_BACKEND_READY port=40359
+[2026-09-07T14:12:15.300Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-07T14:54:38.570Z] [hermes] [updates] launched posix hand-off: /home/djohonson/.hermes/hermes-agent/scripts/desktop-update/posix.sh (branch main); quitting to hand off
+[2026-09-07T14:57:46.686Z] [hermes] [updates] detached update finished OK (branch main)
+[2026-09-07T14:57:48.078Z] [hermes] [renderer console:main] Uncaught SyntaxError: Unexpected token ':' (file:///home/djohonson/.hermes/hermes-agent/apps/desktop/release/linux-unpacked/resources/app.asar.unpacked/dist/assets/index-Ci1GuYVJ.js:440)
+[2026-09-07T14:57:51.396Z] [hermes] HERMES_BACKEND_READY port=46081
+[2026-09-07T14:57:51.552Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-07T15:44:29.727Z] [hermes] HERMES_BACKEND_READY port=40365
+[2026-09-07T15:44:29.830Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-07T15:54:04.496Z] [hermes] HERMES_BACKEND_READY port=39935
+[2026-09-07T15:54:04.579Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
+[2026-09-07T16:01:04.553Z] [hermes] HERMES_BACKEND_READY port=36183
+[2026-09-07T16:01:04.684Z] [hermes] [boot] Hermes backend is ready. Finalizing desktop startup
